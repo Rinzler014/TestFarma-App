@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFormFragment">
 
+    <fragment
+        android:id="@+id/firstFormFragment"
+        android:name="com.example.testfarma.FirstFormFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first_form">
+        <action
+            android:id="@+id/action_firstFormFragment_to_secondFormFragment"
+            app:destination="@id/secondFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFormFragment"
+        android:name="com.example.testfarma.SecondFormFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second_form">
+        <action
+            android:id="@+id/action_secondFormFragment_to_accountSuccessCreation"
+            app:destination="@id/accountSuccessCreation" />
+        <argument
+            android:name="userPersonalInformation"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSuccessCreation"
+        android:name="com.example.testfarma.AccountSuccessCreation"
+        android:label="@string/account_created_label"
+        tools:layout="@layout/fragment_account_success_creation" />
 </navigation>
