@@ -44,4 +44,24 @@
     <string name="password_description_1_5">- Al menos 8 caracteres</string>
     <string name="account_instructions_label">Ya puedes iniciar sesion con tu usuario y contraseña</string>
     <string name="account_created_label">¡Felicidades, tu cuenta se ha creado con exito!</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="menu_title_label">MENU</string>
+    <string name="home_label">INICIO</string>
+    <string name="our_company_label">NOSOTROS</string>
+    <string name="my_data_label">MIS DATOS</string>
+
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_nosotros">Nosotros</string>
+    <string name="menu_misdatos">Mis Datos</string>
+    <string name="menu_config">Configuración de mi Perfil</string>
+
+    <string name="nos_historia">Testfarma nace para cubrir la necesidad de ir más allá en la venta y distribución de insumos médicos y pruebas de diagnóstico clínico, así como de productos farmacéuticos. Testfarma, es una empresa que brinda además asesoría técnica con profesionales de la salud, para que el cliente pueda implementar efectivamente sus proyectos de diagnóstico, bien sea en el ámbito de la salud laboral y ocupacional; así como tamizajes y diagnósticos para trabajadores ó público en general.</string>
+    <string name="nos_historia_titulo">Nuestra Historia</string>
+    <string name="nos_info">Ofrecemos servicios de salud ocupacional a empresas</string>
+    <string name="nos_titulo">Servicios de Salud Laboral / Ocupacional</string>
+
+
 </resources>

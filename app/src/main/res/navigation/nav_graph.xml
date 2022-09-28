@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFormFragment">
+    app:startDestination="@id/mainMenu">
 
     <fragment
         android:id="@+id/firstFormFragment"
@@ -31,4 +31,43 @@
         android:name="com.example.testfarma.AccountSuccessCreation"
         android:label="@string/account_created_label"
         tools:layout="@layout/fragment_account_success_creation" />
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.example.testfarma.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.testfarma.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_menu_to_slideshowFragment"
+            app:destination="@id/slideshowFragment"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.testfarma.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/slideshowFragment"
+        android:name="com.example.testfarma.ui.slideshow.SlideshowFragment"
+        android:label="fragment_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
 </navigation>

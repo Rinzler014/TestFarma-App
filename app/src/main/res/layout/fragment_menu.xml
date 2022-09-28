@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Menu">
+
+
+    <TextView
+        android:id="@+id/menu_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.TestFarma.TextView"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/menu_title_label"
+        android:textSize="70sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:id="@+id/home_button"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="@string/home_label"
+        app:layout_constraintStart_toStartOf="@id/menu_label"
+        app:layout_constraintTop_toBottomOf="@id/menu_label"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:paddingTop="10dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/home_shortcut_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_shortcut_icon"
+        app:layout_constraintTop_toTopOf="@id/home_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/our_company_button"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="@string/our_company_label"
+        app:layout_constraintStart_toStartOf="@id/menu_label"
+        app:layout_constraintTop_toBottomOf="@id/home_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:id="@+id/our_company_shortcut_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_shortcut_icon"
+        app:layout_constraintTop_toTopOf="@id/our_company_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/my_data_button"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="@string/my_data_label"
+        app:layout_constraintStart_toStartOf="@id/menu_label"
+        app:layout_constraintTop_toBottomOf="@id/our_company_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:id="@+id/my_data_shortcut_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_shortcut_icon"
+        app:layout_constraintTop_toTopOf="@id/my_data_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/modify_my_data_button"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="EDITAR MIS DATOS"
+        app:layout_constraintStart_toStartOf="@id/menu_label"
+        app:layout_constraintTop_toBottomOf="@id/my_data_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:id="@+id/modify_my_data_shortcut_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_shortcut_icon"
+        app:layout_constraintTop_toTopOf="@id/modify_my_data_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
