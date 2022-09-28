@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/firstFormFragment2">
+
+    <fragment
+        android:id="@+id/firstFormFragment2"
+        android:name="com.example.testfarma.FirstFormFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first_form">
+        <action
+            android:id="@+id/action_firstFormFragment2_to_secondFormFragment2"
+            app:destination="@id/secondFormFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFormFragment2"
+        android:name="com.example.testfarma.SecondFormFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second_form">
+        <action
+            android:id="@+id/action_secondFormFragment2_to_accountSuccessCreation2"
+            app:destination="@id/accountSuccessCreation2" />
+        <argument
+            android:name="userPersonalInformation"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSuccessCreation2"
+        android:name="com.example.testfarma.AccountSuccessCreation"
+        android:label="@string/account_created_label"
+        tools:layout="@layout/fragment_account_success_creation">
+        <action
+            android:id="@+id/action_accountSuccessCreation2_to_navigation2"
+            app:destination="@id/navigation2" />
+    </fragment>
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/nav_home">
+        <fragment
+            android:id="@+id/nav_slideshow"
+            android:name="com.example.testfarma.ui.slideshow.SlideshowFragment"
+            android:label="@string/menu_misdatos"
+            tools:layout="@layout/fragment_slideshow" />
+        <fragment
+            android:id="@+id/nav_home"
+            android:name="com.example.testfarma.ui.home.HomeFragment"
+            android:label="@string/menu_inicio"
+            tools:layout="@layout/fragment_home" />
+        <fragment
+            android:id="@+id/configuracion_perfil"
+            android:name="com.example.testfarma.ui.slideshow.SlideshowFragment"
+            android:label="Configuracion de Perfil"
+            tools:layout="@layout/fragment_configuracion_perfil" />
+        <fragment
+            android:id="@+id/nav_gallery"
+            android:name="com.example.testfarma.ui.gallery.GalleryFragment"
+            android:label="@string/menu_nosotros"
+            tools:layout="@layout/fragment_gallery" />
+
+    </navigation>
+</navigation>
