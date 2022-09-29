@@ -2,6 +2,7 @@ package com.example.testfarma
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,10 @@ import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
 import androidx.navigation.findNavController
 import com.example.testfarma.databinding.FragmentSecondFormBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
 
@@ -26,6 +31,7 @@ class SecondFormFragment : Fragment() {
 
     private var _binding : FragmentSecondFormBinding? = null
     private val binding get() = _binding!!
+    private val database = FirebaseDatabase.getInstance().reference
 
     private lateinit var userPersonalInformation : Array<String>
 
@@ -233,6 +239,26 @@ class SecondFormFragment : Fragment() {
         }
 
         createButton.setOnClickListener {
+
+            userPersonalInformation.toMutableList()
+
+            //DATA BASE FIELDS
+
+            //NAME
+            //LAST NAME
+            //MOM LAST NAME
+            //BIRTH DATE
+            //GENDER
+            //USERNAME
+            //MAIL
+            //PASSWORD
+
+            database.child(userName.text.toString()).setValue(User(userPersonalInformation[0],
+                                                                    userPersonalInformation[1],
+                                                                    userPersonalInformation[2],
+                                                        userPersonalInformation[3] + "/" + userPersonalInformation[4] + "/" + userPersonalInformation[5],
+                                                                    userPersonalInformation[6],
+                                                                    userName.text.toString(), email.text.toString(), password.text.toString() ))
 
             val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
             view.findNavController().navigate(action)

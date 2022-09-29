@@ -1,4 +1,4 @@
-package com.example.sprint2design2
+package com.example.testfarma
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main_menu)
     }
     fun toastMessage(view: View) {
         val messageEditText = "Boton!"

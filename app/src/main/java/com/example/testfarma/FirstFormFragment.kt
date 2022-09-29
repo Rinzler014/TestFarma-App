@@ -1,6 +1,7 @@
 package com.example.testfarma
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.testfarma.databinding.FragmentFirstFormBinding
+import com.google.firebase.database.FirebaseDatabase
 
 class FirstFormFragment : Fragment() {
 
@@ -37,6 +39,7 @@ class FirstFormFragment : Fragment() {
     //View Created
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     //Layout Inflated
@@ -55,6 +58,7 @@ class FirstFormFragment : Fragment() {
 
     //View Inflated and Displayed
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
 
         /* USER PERSONAL DATA */

@@ -49,7 +49,7 @@
             tools:layout="@layout/fragment_home" />
         <fragment
             android:id="@+id/configuracion_perfil"
-            android:name="com.example.testfarma.ui.slideshow.SlideshowFragment"
+            android:name="com.example.testfarma.configuracion_perfil"
             android:label="Configuracion de Perfil"
             tools:layout="@layout/fragment_configuracion_perfil" />
         <fragment

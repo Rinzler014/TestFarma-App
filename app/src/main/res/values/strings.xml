@@ -18,6 +18,17 @@
 
 
 
+    <string name="rodolfo_de_la_o">Rodolfo de la O</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="correo_a01366363_tec_mx">Correo: A01366363@tec.mx</string>
+    <string name="saldo_3669_00">Saldo: $ 3669.00</string>
+    <string name="RECTANGULO">TODO</string>
+    <string name="comprar">COMPRAR</string>
+    <string name="historial">HISTORIAL</string>
+
+
+
     <string name="first_fragment_label"> Registro de Usuario </string>
     <string name="second_fragment_label"> Creación de Cuenta </string>
     <string name="title_first_page">Cuentanos sobre ti</string>
