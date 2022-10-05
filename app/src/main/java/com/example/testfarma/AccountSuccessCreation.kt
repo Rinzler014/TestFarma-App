@@ -39,7 +39,7 @@ class AccountSuccessCreation : Fragment() {
 
         button_to_login.setOnClickListener {
 
-            val action = AccountSuccessCreationDirections.actionAccountSuccessCreation2ToNavigation2()
+            val action = AccountSuccessCreationDirections.actionAccountSuccessCreation2ToLogin()
             view.findNavController().navigate(action)
 
         }

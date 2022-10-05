@@ -11,9 +11,11 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.navigation.findNavController
 import com.example.testfarma.databinding.FragmentSecondFormBinding
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
@@ -31,7 +33,12 @@ class SecondFormFragment : Fragment() {
 
     private var _binding : FragmentSecondFormBinding? = null
     private val binding get() = _binding!!
+
+    //Instance of Firebase DataBase
     private val database = FirebaseDatabase.getInstance().reference
+
+    //Instance of Firebase Authentication
+    private val auth = Firebase.auth
 
     private lateinit var userPersonalInformation : Array<String>
 
@@ -253,15 +260,26 @@ class SecondFormFragment : Fragment() {
             //MAIL
             //PASSWORD
 
-            database.child(userName.text.toString()).setValue(User(userPersonalInformation[0],
-                                                                    userPersonalInformation[1],
-                                                                    userPersonalInformation[2],
-                                                        userPersonalInformation[3] + "/" + userPersonalInformation[4] + "/" + userPersonalInformation[5],
-                                                                    userPersonalInformation[6],
-                                                                    userName.text.toString(), email.text.toString(), password.text.toString() ))
+            auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+                .addOnCompleteListener {
 
-            val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
-            view.findNavController().navigate(action)
+                    if(it.isSuccessful) {
+                        Log.d("MAIN", "User created successfully")
+
+                        database.child(auth.currentUser?.uid.toString()).setValue(User(userPersonalInformation[0],
+                                                                                            userPersonalInformation[1],
+                                                                                            userPersonalInformation[2],
+                                                                                            userPersonalInformation[3] + "/" + userPersonalInformation[4] + "/" + userPersonalInformation[5],
+                                                                                            userPersonalInformation[6],
+                                                                                            userName.text.toString(), email.text.toString(), password.text.toString() ))
+
+                        val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
+                        view.findNavController().navigate(action)
+                    } else {
+                        Log.w("MAIN", "Failed to create an user, please try again", it.exception)
+                        Toast.makeText(context, "No se pudo crear tu cuenta, intentalo de nuevo", Toast.LENGTH_SHORT).show()
+                    }
+                }
 
         }
 

@@ -6,16 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Login">
 
-
-    <ImageView
-        android:layout_width="601dp"
-        android:layout_height="670dp"
-        android:alpha="0.3"
-        android:src="@drawable/tf_logo_single"
-        tools:layout_editor_absoluteX="-216dp"
-        tools:layout_editor_absoluteY="88dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
-
     <ImageView
         android:id="@+id/tf_logo"
         android:layout_width="300dp"
@@ -38,26 +28,26 @@
         android:layout_marginBottom="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/field_login_username" />
+        app:layout_constraintBottom_toTopOf="@id/field_login_email" />
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/field_login_username"
+        android:id="@+id/field_login_email"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         app:boxBackgroundColor="@color/white"
-        android:hint="@string/username_label"
+        android:hint="@string/email_label"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tf_logo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/field_login_username_edit"
+            android:id="@+id/field_login_email_edit"
             android:layout_width="280dp"
             android:fontFamily="@font/montserrat_regular"
             android:layout_height="wrap_content"
-            android:inputType="textNoSuggestions" />
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,8 +58,8 @@
         app:boxBackgroundColor="@color/white"
         android:layout_marginTop="20dp"
         android:hint="@string/password_label"
-        app:layout_constraintStart_toStartOf="@id/field_login_username"
-        app:layout_constraintTop_toBottomOf="@id/field_login_username">
+        app:layout_constraintStart_toStartOf="@id/field_login_email"
+        app:layout_constraintTop_toBottomOf="@id/field_login_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_login_password_edit"

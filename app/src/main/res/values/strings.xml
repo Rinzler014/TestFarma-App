@@ -77,4 +77,5 @@
     <string name="create_email_with_mail_label">Registrarme con correo electrónico</string>
     <string name="log_in_button">Ingresar</string>
     <string name="tf_logo_description">TestFarma Description</string>
+    <string name="hello_message_label">Hola de nuevo, %1$s</string>
 </resources>

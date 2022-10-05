@@ -165,11 +165,11 @@
         app:srcCompat="@drawable/ic_baseline_person_24" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/hello_message"
         android:layout_width="244dp"
         android:layout_height="25dp"
         android:layout_marginTop="30dp"
-        android:text="Hola de nuevo, USUARIO"
+        android:text="@string/hello_message_label"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
