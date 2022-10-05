@@ -20,23 +20,6 @@
         app:layout_constraintVertical_bias="0.325"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        android:layout_width="140dp"
-        android:layout_height="36dp"
-        android:background="#FAD22D"
-        android:backgroundTint="#FAD22D"
-        android:isScrollContainer="true"
-        android:text="@string/Menu"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
