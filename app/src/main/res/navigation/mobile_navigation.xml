@@ -62,6 +62,11 @@
         <argument
             android:name="userUID"
             app:argType="string" />
+        <fragment
+            android:id="@+id/contacto"
+            android:name="com.example.testfarma.contacto"
+            android:label="fragment_contacto"
+            tools:layout="@layout/fragment_contacto" />
 
     </navigation>
     <fragment

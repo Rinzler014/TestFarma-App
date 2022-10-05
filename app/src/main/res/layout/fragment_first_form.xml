@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".FirstFormFragment">
 
+
     <TextView
         android:id="@+id/title_first_form"
         style="@style/Widget.TestFarma.TextView"
@@ -224,6 +225,5 @@
         app:layout_constraintTop_toBottomOf="@id/buttons_gender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,6 +28,14 @@
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp" />
 
+        <item
+            android:id="@+id/contacto"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/contact_label"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp" />
+
+
         <!-- Para crear mas ubicaciones se debe tener el mismo nombre de item aqui y en el nav graph-->
 
     </group>
