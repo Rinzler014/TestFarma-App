@@ -7,19 +7,9 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <ImageView
-        android:id="@+id/datos_head"
-        android:layout_width="326dp"
-        android:layout_height="80dp"
-        android:src="@drawable/tf_vectoryzed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/datos_imageView"
         android:layout_width="417dp"
         android:layout_height="80dp"
-        android:layout_marginTop="88dp"
         android:src="@drawable/side_nav_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,8 +18,7 @@
         android:id="@+id/imageView4"
         android:layout_width="74dp"
         android:layout_height="78dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
@@ -38,8 +27,8 @@
         android:id="@+id/datos_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
         android:text="Nombre del usuario"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -49,12 +38,13 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/texted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="128dp"
         android:text="Edad: "
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -62,13 +52,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/textse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="168dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="172dp"
         android:text="Sexo:"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -80,8 +69,8 @@
         android:id="@+id/textpeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="176dp"
         android:text="Peso: "
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -93,65 +82,13 @@
         android:id="@+id/textalt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="164dp"
         android:text="Altura:"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_ed"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="178dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="20 años"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/texted"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_se"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="176dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Femenino"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textse"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_pe"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="60 kg"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_al"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="1.63 m"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
