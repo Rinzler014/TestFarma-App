@@ -90,6 +90,7 @@
     <string name="Phone">+55 7081 7720</string>
     <string name="Menu">Menu</string>
     <string name="descripcion">descripcion</string>
+    <string name="contact_label">Contacto</string>
 
 
 </resources>
