@@ -51,12 +51,6 @@ class HomeFragment : Fragment() {
             Log.e("MAIN", "Error getting data", it)
             helloMessage.text = getString(R.string.hello_message_label, "Usuario")
         }
-    /*
-
-
-        helloMessage.text = getString(R.string.hello_message_label, userUID)
-        */
-
 
     }
 
