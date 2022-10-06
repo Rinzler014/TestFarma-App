@@ -133,17 +133,18 @@
         app:layout_constraintTop_toTopOf="@id/item_shop_1"
         app:layout_constraintBottom_toBottomOf="@id/item_shop_1" />
 
+
     <TextView
         android:id="@+id/item_shop_description_1_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Costo: $ %d M.N"
-        android:fontFamily="@font/montserrat_regular"
-        android:textSize="20sp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Costo: $ %d M.N"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/item_shop_1"
-        app:layout_constraintTop_toBottomOf="@id/item_shop_description_1"/>
-
+        app:layout_constraintTop_toBottomOf="@id/item_shop_description_1" />
 
     <ImageView
         android:id="@+id/item_shop_2"
