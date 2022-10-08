@@ -271,7 +271,7 @@ class SecondFormFragment : Fragment() {
                                                                                             userPersonalInformation[2],
                                                                                             userPersonalInformation[3] + "/" + userPersonalInformation[4] + "/" + userPersonalInformation[5],
                                                                                             userPersonalInformation[6],
-                                                                                            userName.text.toString(), email.text.toString(), password.text.toString() ))
+                                                                                            userName.text.toString(), email.text.toString()))
 
                         val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
                         view.findNavController().navigate(action)

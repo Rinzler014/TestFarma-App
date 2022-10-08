@@ -7,9 +7,7 @@ data class User(val name : String,
                 val gender : String,
                 val username : String,
                 val mail : String,
-                val password : String ) {
-
-
-
+                val past_meetings : List<String> = listOf(),
+                val upcoming_meeting : String = "00/00/0000") {
 
 }
