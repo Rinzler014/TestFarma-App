@@ -72,13 +72,21 @@
     <fragment
         android:id="@+id/login"
         android:name="com.example.testfarma.Login"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="Inicio de Sesion"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_login_to_navigation2"
             app:destination="@id/navigation2" />
         <action
             android:id="@+id/action_login_to_firstFormFragment2"
             app:destination="@id/firstFormFragment2" />
+        <action
+            android:id="@+id/action_login_to_resetPassword"
+            app:destination="@id/resetPassword" />
     </fragment>
+    <fragment
+        android:id="@+id/resetPassword"
+        android:name="com.example.testfarma.ResetPassword"
+        android:label="Recuperacion de Contraseña"
+        tools:layout="@layout/fragment_reset_password" />
 </navigation>

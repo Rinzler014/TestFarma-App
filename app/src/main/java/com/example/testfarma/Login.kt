@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -57,6 +58,8 @@ class Login : Fragment() {
         val mail = view.findViewById<EditText>(R.id.field_login_email_edit)
         val password = view.findViewById<EditText>(R.id.field_login_password_edit)
 
+        val resetPassword = view.findViewById<TextView>(R.id.reset_password_button)
+
         val loginButton = view.findViewById<Button>(R.id.login_button)
         val createAccountButton = view.findViewById<Button>(R.id.button_create_account)
 
@@ -80,6 +83,13 @@ class Login : Fragment() {
                         }
                     }
             }
+
+        }
+
+        resetPassword.setOnClickListener {
+
+            val action = LoginDirections.actionLoginToResetPassword()
+            view.findNavController().navigate(action)
 
         }
 

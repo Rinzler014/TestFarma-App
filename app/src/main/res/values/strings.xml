@@ -92,6 +92,9 @@
     <string name="descripcion">descripcion</string>
     <string name="contact_label">Contacto</string>
     <string name="reset_password_label">¿Olvidaste tu contraseña?</string>
+    <string name="reset_password_button_label">Recuperar contraseña</string>
+    <string name="continue_pop_up_button">Continuar</string>
+    <string name="pop_up_label_message">Si tu direccion de correo es correcta te enviaremos un enlace para que puedas volver a iniciar sesion</string>
 
 
 </resources>
