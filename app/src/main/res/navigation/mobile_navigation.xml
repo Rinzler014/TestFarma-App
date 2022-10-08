@@ -67,6 +67,15 @@
             android:name="com.example.testfarma.contacto"
             android:label="fragment_contacto"
             tools:layout="@layout/fragment_contacto" />
+        <fragment
+            android:id="@+id/logOut"
+            android:name="com.example.testfarma.LogOut"
+            android:label="fragment_log_out"
+            tools:layout="@layout/fragment_log_out" >
+            <action
+                android:id="@+id/action_logOut_to_mobile_navigation"
+                app:destination="@id/mobile_navigation" />
+        </fragment>
 
     </navigation>
     <fragment

@@ -95,6 +95,7 @@
     <string name="reset_password_button_label">Recuperar contraseña</string>
     <string name="continue_pop_up_button">Continuar</string>
     <string name="pop_up_label_message">Si tu direccion de correo es correcta te enviaremos un enlace para que puedas volver a iniciar sesion</string>
+    <string name="log_out_label">Cerrar Sesion</string>
 
 
 </resources>
