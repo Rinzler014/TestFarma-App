@@ -76,6 +76,11 @@
                 android:id="@+id/action_logOut_to_mobile_navigation"
                 app:destination="@id/mobile_navigation" />
         </fragment>
+        <fragment
+            android:id="@+id/clinical_studies"
+            android:name="com.example.testfarma.ClinicalStudyFragment"
+            android:label="Estudios"
+            tools:layout="@layout/fragment_clinical_study_list" />
 
     </navigation>
     <fragment

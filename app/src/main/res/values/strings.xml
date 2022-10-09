@@ -96,6 +96,12 @@
     <string name="continue_pop_up_button">Continuar</string>
     <string name="pop_up_label_message">Si tu direccion de correo es correcta te enviaremos un enlace para que puedas volver a iniciar sesion</string>
     <string name="log_out_label">Cerrar Sesion</string>
+    <string name="forgot_password_title">¿Olvidaste tu contraseña?</string>
+    <string name="forgot_password_message">¡No te preocupes, te tenemos cubierto!</string>
+    <string name="meeting_title_text">¿Necesitas una Cita?</string>
+    <string name="meetings_message">¡Estas en el lugar correcto!</string>
+    <string name="check_availability_label">Checar disponibilidad</string>
+    <string name="studies_list_title">Catalogo de Estudios</string>
 
 
 </resources>

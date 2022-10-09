@@ -6,6 +6,7 @@
     tools:showIn="navigation_view">
 
     <group
+        android:id="@+id/user_options"
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -31,6 +32,19 @@
     </group>
 
     <group
+        android:id="@+id/services"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/clinical_studies"
+            android:icon="@drawable/ic_baseline_science_24"
+            android:title="@string/studies_list_title"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp"/>
+
+    </group>
+
+    <group
         android:id="@+id/company_info"
         android:checkableBehavior="single">
 
@@ -51,7 +65,7 @@
     </group>
 
     <group
-        android:id="@+id/user_options"
+        android:id="@+id/sign_options"
         android:checkableBehavior="single">
 
         <item
