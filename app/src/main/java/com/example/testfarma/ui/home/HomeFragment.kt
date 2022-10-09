@@ -12,6 +12,7 @@ import com.example.testfarma.R
 import com.example.testfarma.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 
 class HomeFragment : Fragment() {
 
@@ -22,15 +23,8 @@ class HomeFragment : Fragment() {
     //Instance of Firebase DataBase
     private val database = FirebaseDatabase.getInstance().reference
 
-    private lateinit var auth : FirebaseAuth
-    private lateinit var userUID : String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        arguments?.let {
-            userUID = it.getString("userUID") as String
-        }
 
     }
 
@@ -47,26 +41,16 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Log.d("MAIN", userUID)
-
-        /*
-
-        database.child(userUID).child("name").get().addOnSuccessListener {
-            Log.i("firebase", "Got value")
-        }.addOnFailureListener{
-            Log.e("firebase", "Error getting data", it)
-        }
-
-
-         */
-
-
-    /*
+        val userUID = FirebaseAuth.getInstance().currentUser?.uid.toString()
 
         val helloMessage = view.findViewById<TextView>(R.id.hello_message)
-        helloMessage.text = getString(R.string.hello_message_label, userUID)
-        */
 
+        database.child(userUID).child("name").get().addOnSuccessListener {
+            helloMessage.text = getString(R.string.hello_message_label, it.value)
+        }.addOnFailureListener{
+            Log.e("MAIN", "Error getting data", it)
+            helloMessage.text = getString(R.string.hello_message_label, "Usuario")
+        }
 
     }
 
