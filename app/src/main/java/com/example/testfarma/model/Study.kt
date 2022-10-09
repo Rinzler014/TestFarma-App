@@ -6,7 +6,7 @@ data class Study (
 
     @DrawableRes val imageResourceId : Int,
     val name : String,
-    val price : Float,
+    val price : Int,
     val requirements : List<String>
 
 )

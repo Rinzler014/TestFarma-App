@@ -17,16 +17,11 @@ import kotlinx.android.synthetic.main.fragment_clinical_study_list.view.*
  */
 class ClinicalStudyFragment : Fragment() {
 
-    private lateinit var adapter : ClinicalStudyRecyclerViewAdapter
     private lateinit var recyclerView: RecyclerView
 
     private var _binding : FragmentClinicalStudyBinding? = null
     private val binding get() = _binding!!
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,7 +39,7 @@ class ClinicalStudyFragment : Fragment() {
 
         recyclerView = binding.verticalRecyclerView
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = ClinicalStudyRecyclerViewAdapter()
+        recyclerView.adapter = ClinicalStudyRecyclerViewAdapter(context)
 
         recyclerView.setHasFixedSize(true)
 

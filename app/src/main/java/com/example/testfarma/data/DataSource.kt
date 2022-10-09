@@ -11,11 +11,31 @@ object DataSource {
 
         Study(
             R.drawable.tf_logo_single,
-            "Prueba COVID 1",
-            99.00F,
-            listOf("Ayuno 8 Horas", "Sin limpieza bucal")
-        )
+            "Pruebas de Antígeno SarS-CoV2.",
+            129,
+            listOf("Ayuno 8 Horas", "Sin limpieza bucal previa")
+        ),
 
+        Study(
+            R.drawable.tf_logo_single,
+            "Pruebas PCR-RT, en alianza con Laboratorio MDT.",
+            299,
+            listOf("Sin limpieza bucal previa")
+        ),
+
+        Study(
+            R.drawable.tf_logo_single,
+            "Pruebas Serológicas de anticuerpos.",
+            0,
+            listOf("Sin requisitos")
+        ),
+
+        Study(
+            R.drawable.tf_logo_single,
+            "Productos Farmacéuticos (Pronto Disponibles)",
+            0,
+            listOf("Sin requisitos")
+        )
 
     )
 

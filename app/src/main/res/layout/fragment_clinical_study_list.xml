@@ -31,7 +31,7 @@
                     android:paddingTop="8dp"
                     android:paddingStart="8dp"
                     android:paddingEnd="0dp"
-                    android:text="hola"
+                    android:text="PLACEHOLDER"
                     android:paddingBottom="16dp"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     app:layout_constraintTop_toBottomOf="@id/clinical_study_image"
@@ -43,23 +43,42 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_regular"
                     android:paddingBottom="8dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="8dp"
+                    android:text="PLACEHOLDER"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <TextView
+                    android:id="@+id/clinical_study_requirements_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
                     android:paddingStart="8dp"
                     android:paddingEnd="0dp"
-                    app:layout_constraintTop_toBottomOf="@id/clinical_study_name"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
                     app:layout_constraintStart_toStartOf="parent"
-                    android:textAppearance="?attr/textAppearanceBody1"/>
+                    app:layout_constraintTop_toBottomOf="@id/clinical_study_name"
+                    android:text="@string/study_reqs_label" />
 
                 <TextView
                     android:id="@+id/clinical_study_requirements"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingEnd="8dp"
-                    android:paddingStart="0dp"
                     android:paddingBottom="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:textAppearance="?attr/textAppearanceBody1"/>
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="PLACEHOLDER"
+                    app:layout_constraintTop_toBottomOf="@id/clinical_study_requirements_label"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

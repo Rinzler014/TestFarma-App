@@ -1,5 +1,6 @@
 package com.example.testfarma
 
+import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +8,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.testfarma.data.DataSource
+import com.google.firebase.database.FirebaseDatabase
 
 class ClinicalStudyRecyclerViewAdapter(
 
+    private val context : Context?
+
 ) : RecyclerView.Adapter<ClinicalStudyRecyclerViewAdapter.StudyCardViewHolder>() {
 
+    //Instance of Firebase DataBase
+    private val database = FirebaseDatabase.getInstance().reference
     /**
      * Source Data to display
      */
@@ -27,10 +33,19 @@ class ClinicalStudyRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: StudyCardViewHolder, position: Int) {
         val study = studies[position]
+        val resources = context?.resources
+
+        /*
+        database.child("KxBxqLwCzaUj0so6p7Sho96WTNM2").child("name").get().addOnSuccessListener {
+            holder.studyName?.text = it.value.toString()
+        }.addOnFailureListener {
+            holder.studyName?.text = resources?.getString(R.string.error_database_data)
+        }
+        */
 
         holder.studyImage?.setImageResource(study.imageResourceId)
         holder.studyName?.text = study.name
-        holder.studyPrice?.text = study.price.toString()
+        holder.studyPrice?.text = resources?.getString(R.string.study_price, study.price)
         holder.studyReq?.text = study.requirements.joinToString("\n")
 
     }

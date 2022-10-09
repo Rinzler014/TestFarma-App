@@ -103,5 +103,8 @@
     <string name="check_availability_label">Checar disponibilidad</string>
     <string name="studies_list_title">Catalogo de Estudios</string>
 
+    <string name="study_price"> $ %1$d M.N </string>
+    <string name="study_reqs_label">Requerimientos:</string>
+    <string name="error_database_data">Sin datos para mostrar</string>
 
 </resources>
