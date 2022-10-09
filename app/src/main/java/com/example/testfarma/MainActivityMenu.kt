@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.testfarma.databinding.ActivityMainMenuBinding
 import com.google.android.material.internal.NavigationMenuItemView
 import com.google.android.material.navigation.NavigationBarItemView
@@ -25,21 +26,10 @@ class MainActivityMenu : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainMenuBinding
 
-    fun sendEmail(recipient : String, subject : String, message : String) {
-
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.setDataAndType(Uri.parse("mailto:"), "text/plain")
-
-        intent.putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
-        intent.putExtra(Intent.EXTRA_SUBJECT, subject)
-        intent.putExtra(Intent.EXTRA_TEXT, message)
-
-        startActivity(Intent.createChooser(intent, getString(R.string.email_chooser)))
-
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         binding = ActivityMainMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
