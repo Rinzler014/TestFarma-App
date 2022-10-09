@@ -107,4 +107,18 @@
     <string name="study_reqs_label">Requerimientos:</string>
     <string name="error_database_data">Sin datos para mostrar</string>
 
+    <string name="email_chooser"> Elije una app para mandar el correo… </string>
+    <string name="email_recipient_studies"> info@testfarma.com.mx </string>
+    <string name="email_subject_studies">Informacion sobre Producto desde la App TestFarma</string>
+    <string name="email_message_studies">
+
+        Hola, buen dia\n\n
+
+        Mi nombre es %1$s y quisiera buscar informacion sobre el producto "<i>%2$s</i>"\n\n\n
+
+
+        Muchas gracias.
+
+    </string>
+
 </resources>

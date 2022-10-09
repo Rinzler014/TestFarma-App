@@ -1,5 +1,7 @@
 package com.example.testfarma
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -22,6 +24,19 @@ class MainActivityMenu : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainMenuBinding
+
+    fun sendEmail(recipient : String, subject : String, message : String) {
+
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.setDataAndType(Uri.parse("mailto:"), "text/plain")
+
+        intent.putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject)
+        intent.putExtra(Intent.EXTRA_TEXT, message)
+
+        startActivity(Intent.createChooser(intent, getString(R.string.email_chooser)))
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

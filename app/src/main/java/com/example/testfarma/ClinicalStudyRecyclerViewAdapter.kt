@@ -1,14 +1,24 @@
 package com.example.testfarma
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.os.IBinder.DeathRecipient
+import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.core.app.BundleCompat
+import androidx.core.content.ContextCompat.startActivity
 import com.example.testfarma.data.DataSource
 import com.google.firebase.database.FirebaseDatabase
+
 
 class ClinicalStudyRecyclerViewAdapter(
 
@@ -48,6 +58,7 @@ class ClinicalStudyRecyclerViewAdapter(
         holder.studyPrice?.text = resources?.getString(R.string.study_price, study.price)
         holder.studyReq?.text = study.requirements.joinToString("\n")
 
+
     }
 
     override fun getItemCount(): Int {
@@ -60,6 +71,7 @@ class ClinicalStudyRecyclerViewAdapter(
      * Initialize view elements
      */
     class StudyCardViewHolder(view : View?) : RecyclerView.ViewHolder(view!!) {
+        val card = view?.findViewById<CardView>(R.id.card_view)
         val studyImage = view?.findViewById<ImageView>(R.id.clinical_study_image)
         val studyName = view?.findViewById<TextView>(R.id.clinical_study_name)
         val studyPrice = view?.findViewById<TextView>(R.id.clinical_study_price)
