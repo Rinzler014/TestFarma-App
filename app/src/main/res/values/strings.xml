@@ -70,8 +70,6 @@
     <string name="password_description_1_5">- Al menos 8 caracteres</string>
     <string name="account_instructions_label">Ya puedes iniciar sesion con tu usuario y contraseña</string>
     <string name="account_created_label">¡Felicidades, tu cuenta se ha creado con exito!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_title">Inicio de Sesión</string>
     <string name="new_account_ad">¿No tienes una cuenta?</string>
     <string name="create_email_with_mail_label">Registrarme con correo electrónico</string>
@@ -84,13 +82,17 @@
     <string name="testfarma">Testfarma</string>
     <string name="mail">Mail</string>
     <string name="instagram">Instagram</string>
+    <string name="Instagram">testfarma.mx</string>
     <string name="twitter">Twitter</string>
+    <string name="Twitter">Cuenta en construccion</string>
     <string name="facebook">FaceBook</string>
+    <string name="Facebook">Cuenta en construccion</string>
     <string name="Mail">info@testfarma.com.mx</string>
     <string name="Phone">+55 7081 7720</string>
-    <string name="Menu">Menu</string>
-    <string name="descripcion">descripcion</string>
+    <string name="contact_title">Nuestras Redes Sociales</string>
     <string name="contact_label">Contacto</string>
+
+
     <string name="reset_password_label">¿Olvidaste tu contraseña?</string>
     <string name="reset_password_button_label">Recuperar contraseña</string>
     <string name="continue_pop_up_button">Continuar</string>

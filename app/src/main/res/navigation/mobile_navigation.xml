@@ -65,7 +65,7 @@
         <fragment
             android:id="@+id/contacto"
             android:name="com.example.testfarma.contacto"
-            android:label="fragment_contacto"
+            android:label="@string/contact_label"
             tools:layout="@layout/fragment_contacto" />
         <fragment
             android:id="@+id/logOut"
