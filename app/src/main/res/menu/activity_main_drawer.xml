@@ -20,6 +20,14 @@
             android:title="@string/menu_misdatos"
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp"/>
+
+        <item
+            android:id="@+id/user_studies"
+            android:title="Mis Estudios"
+            android:icon="@drawable/ic_check"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp" />
+
         <item
             android:id="@+id/configuracion_perfil"
             android:icon="@drawable/ic_edit"
