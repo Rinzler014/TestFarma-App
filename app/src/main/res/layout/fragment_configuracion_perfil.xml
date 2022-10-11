@@ -12,16 +12,17 @@
         android:id="@+id/config_us"
         android:layout_width="411dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="20dp"
         android:src="@drawable/side_nav_bar"
-        app:layout_constraintBottom_toTopOf="@+id/user_name_output"
+        android:text="@string/hello_message_label"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="72dp"
-        android:layout_height="70dp"
+        android:layout_width="83dp"
+        android:layout_height="69dp"
         android:layout_marginTop="4dp"
         android:background="@color/yellow"
         android:visibility="visible"
@@ -29,19 +30,20 @@
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2022_09_04_at_19_26_13_figma"
         tools:src="@drawable/screenshot_2022_09_04_at_19_26_13_figma" />
 
     <TextView
         android:id="@+id/config_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Nombre del usuario"
+        android:layout_marginTop="28dp"
+        android:text="@string/user_name"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,14 +60,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/config_us"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.66" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
         android:text="Correo:"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -78,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:text="Contraseña:"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -97,42 +99,40 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/user_name_output"
-        android:layout_width="164dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="511dp"
         android:fontFamily="@font/montserrat_regular"
-        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toEndOf="@+id/nombre_usuario_text"
-        app:layout_constraintTop_toBottomOf="@+id/config_us" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edad_output"
-        android:layout_width="164dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="76dp"
-        android:fontFamily="@font/montserrat_regular"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/password_output"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintTop_toBottomOf="@+id/config_us"
+        app:layout_constraintVertical_bias="0.826" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password_output"
         android:layout_width="164dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="76dp"
         android:fontFamily="@font/montserrat_regular"
-        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/mail_output"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mail_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/user_name_output" />
 
@@ -165,21 +165,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="358dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:drawableRight="@android:drawable/arrow_down_float"
-        android:text="Prueba Antigenos"
-        android:textColor="@color/black"
-        app:backgroundTint="#D6D2D2"
-        app:iconTint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -188,16 +173,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edad_output" />
+        app:layout_constraintTop_toBottomOf="@+id/password_output" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="70dp"
-        android:layout_height="64dp"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/ic_baseline_person_24"
-        app:layout_constraintEnd_toStartOf="@+id/config_user"
-        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
