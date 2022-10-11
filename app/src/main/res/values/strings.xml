@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test Farma</string>
+    <string name="app_name">TestFarma</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Menú</string>
@@ -70,8 +70,6 @@
     <string name="password_description_1_5">- Al menos 8 caracteres</string>
     <string name="account_instructions_label">Ya puedes iniciar sesion con tu usuario y contraseña</string>
     <string name="account_created_label">¡Felicidades, tu cuenta se ha creado con exito!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_title">Inicio de Sesión</string>
     <string name="new_account_ad">¿No tienes una cuenta?</string>
     <string name="create_email_with_mail_label">Registrarme con correo electrónico</string>
@@ -84,13 +82,48 @@
     <string name="testfarma">Testfarma</string>
     <string name="mail">Mail</string>
     <string name="instagram">Instagram</string>
+    <string name="Instagram">testfarma.mx</string>
     <string name="twitter">Twitter</string>
+    <string name="Twitter">Cuenta en construccion</string>
     <string name="facebook">FaceBook</string>
+    <string name="Facebook">Cuenta en construccion</string>
     <string name="Mail">info@testfarma.com.mx</string>
     <string name="Phone">+55 7081 7720</string>
-    <string name="Menu">Menu</string>
-    <string name="descripcion">descripcion</string>
+    <string name="contact_title">Nuestras Redes Sociales</string>
     <string name="contact_label">Contacto</string>
 
+
+    <string name="reset_password_label">¿Olvidaste tu contraseña?</string>
+    <string name="reset_password_button_label">Recuperar contraseña</string>
+    <string name="continue_pop_up_button">Continuar</string>
+    <string name="pop_up_label_message">Si tu direccion de correo es correcta te enviaremos un enlace para que puedas volver a iniciar sesion</string>
+    <string name="log_out_label">Cerrar Sesion</string>
+    <string name="forgot_password_title">¿Olvidaste tu contraseña?</string>
+    <string name="forgot_password_message">¡No te preocupes, te tenemos cubierto!</string>
+    <string name="meeting_title_text">¿Necesitas una Cita?</string>
+    <string name="meetings_message">¡Estas en el lugar correcto!</string>
+    <string name="check_availability_label">Checar disponibilidad</string>
+    <string name="studies_list_title">Catalogo de Estudios</string>
+
+    <string name="study_price"> $ %1$d M.N </string>
+    <string name="study_reqs_label">Requerimientos:</string>
+    <string name="error_database_data">Sin datos para mostrar</string>
+
+    <string name="email_chooser"> Elije una app para mandar el correo… </string>
+    <string name="email_recipient_studies"> info@testfarma.com.mx </string>
+    <string name="email_subject_studies">Informacion sobre Producto desde la App TestFarma</string>
+    <string name="email_message_studies">
+
+        Hola, buen dia\n\n
+
+        Mi nombre es %1$s y quisiera buscar informacion sobre el producto "<i>%2$s</i>"\n\n\n
+
+
+        Muchas gracias.
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_studies_title">Mis Estudios</string>
 
 </resources>

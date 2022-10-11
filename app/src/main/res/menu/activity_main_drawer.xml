@@ -1,42 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/user_options"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@android:drawable/ic_input_add"
+            android:icon="@drawable/ic_home"
             android:title="@string/menu_inicio"
             android:fontFamily="@font/montserrat_semibold"/>
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@android:drawable/ic_input_add"
-            android:title="@string/menu_nosotros"
-            android:fontFamily="@font/montserrat_semibold"
-            android:textSize="28sp"/>
+
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@android:drawable/ic_input_add"
+            android:icon="@drawable/ic_baseline_person_24"
             android:title="@string/menu_misdatos"
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp"/>
+
+        <item
+            android:id="@+id/user_studies"
+            android:title="Mis Estudios"
+            android:icon="@drawable/ic_check"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp" />
+
         <item
             android:id="@+id/configuracion_perfil"
-            android:icon="@android:drawable/ic_input_add"
+            android:icon="@drawable/ic_edit"
             android:title="@string/menu_config"
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp" />
 
+        <!-- Para crear mas ubicaciones se debe tener el mismo nombre de item aqui y en el nav graph-->
+
+    </group>
+
+    <group
+        android:id="@+id/services"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/clinical_studies"
+            android:icon="@drawable/ic_baseline_science_24"
+            android:title="@string/studies_list_title"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp"/>
+
+    </group>
+
+    <group
+        android:id="@+id/company_info"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_nosotros"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp"/>
+
         <item
             android:id="@+id/contacto"
-            android:icon="@android:drawable/ic_input_add"
+            android:icon="@drawable/ic_contact"
             android:title="@string/contact_label"
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp" />
 
+    </group>
 
-        <!-- Para crear mas ubicaciones se debe tener el mismo nombre de item aqui y en el nav graph-->
+    <group
+        android:id="@+id/sign_options"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/log_out_label"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp"/>
 
     </group>
+
+
 </menu>

@@ -18,4 +18,7 @@
     <color name="background">#fef199</color>
     <color name="green">#30A706</color>
     <color name="red">#D50000</color>
+
+    <color name="grey">#F3F3F1</color>
+
 </resources>
