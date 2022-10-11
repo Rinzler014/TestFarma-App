@@ -7,39 +7,30 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <ImageView
-        android:id="@+id/datos_head"
-        android:layout_width="326dp"
-        android:layout_height="80dp"
-        android:src="@drawable/tf_vectoryzed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/datos_imageView"
-        android:layout_width="417dp"
+        android:layout_width="411dp"
         android:layout_height="80dp"
-        android:layout_marginTop="88dp"
         android:src="@drawable/side_nav_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="74dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="84dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="68dp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@drawable/screenshot_2022_09_04_at_19_26_13_figma"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/datos_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
         android:text="Nombre del usuario"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -49,12 +40,13 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/texted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="128dp"
         android:text="Edad: "
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -62,18 +54,65 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edad_output"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/textse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/texted"
+        app:layout_constraintTop_toBottomOf="@+id/datos_imageView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edad_output3"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_imageView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edad_output4"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edad_output3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/peso_output"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/textalt"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@+id/textpeso"
+        app:layout_constraintTop_toBottomOf="@+id/edad_output" />
 
     <TextView
         android:id="@+id/textse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="168dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
         android:text="Sexo:"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edad_output3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -81,78 +120,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="48dp"
         android:text="Peso: "
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/texted" />
 
     <TextView
         android:id="@+id/textalt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
         android:text="Altura:"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_ed"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="178dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="20 años"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/texted"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_se"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="176dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Femenino"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textse"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_pe"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="60 kg"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_al"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="1.63 m"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/edad_output4"
+        app:layout_constraintTop_toBottomOf="@+id/textse" />
 
     <ImageView
         android:id="@+id/separador"
@@ -221,6 +208,16 @@
         app:backgroundTint="#FF9800"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="69dp"
+        android:layout_height="76dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toStartOf="@+id/datos_user"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="@+id/datos_imageView"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
