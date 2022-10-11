@@ -2,6 +2,7 @@ package com.example.testfarma.data
 
 import com.example.testfarma.R
 import com.example.testfarma.model.Study
+import com.example.testfarma.model.UserStudy
 
 
 object DataSource {
@@ -35,6 +36,18 @@ object DataSource {
             "Productos Farmacéuticos (Pronto Disponibles)",
             0,
             listOf("Sin requisitos")
+        )
+
+    )
+
+    val userStudies : List<UserStudy> = listOf(
+
+        UserStudy(
+
+            R.drawable.tf_logo_single,
+            "Prueba COVID-19 ANTIGENO",
+            79,
+            listOf("SIN REQUISITOS")
         )
 
     )

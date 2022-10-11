@@ -1,4 +1,4 @@
-package com.example.testfarma
+package com.example.testfarma.model
 
 data class User(val name : String,
                 val lastname : String,

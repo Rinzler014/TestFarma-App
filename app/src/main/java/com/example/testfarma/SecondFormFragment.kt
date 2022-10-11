@@ -15,10 +15,9 @@ import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.navigation.findNavController
 import com.example.testfarma.databinding.FragmentSecondFormBinding
+import com.example.testfarma.model.User
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
@@ -266,12 +265,14 @@ class SecondFormFragment : Fragment() {
                     if(it.isSuccessful) {
                         Log.d("MAIN", "User created successfully")
 
-                        database.child(auth.currentUser?.uid.toString()).setValue(User(userPersonalInformation[0],
+                        database.child(auth.currentUser?.uid.toString()).setValue(
+                            User(userPersonalInformation[0],
                                                                                             userPersonalInformation[1],
                                                                                             userPersonalInformation[2],
                                                                                             userPersonalInformation[3] + "/" + userPersonalInformation[4] + "/" + userPersonalInformation[5],
                                                                                             userPersonalInformation[6],
-                                                                                            userName.text.toString(), email.text.toString()))
+                                                                                            userName.text.toString(), email.text.toString())
+                        )
 
                         val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
                         view.findNavController().navigate(action)
