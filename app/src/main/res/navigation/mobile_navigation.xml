@@ -86,6 +86,11 @@
             android:name="com.example.testfarma.UserStudies"
             android:label="Mis Estudios"
             tools:layout="@layout/fragment_user_studies" />
+        <fragment
+            android:id="@+id/nutritional_receipts"
+            android:name="com.example.testfarma.NutritionalReceipts"
+            android:label="Recetas Nutricionales"
+            tools:layout="@layout/fragment_nutritional_receipts" />
 
     </navigation>
     <fragment

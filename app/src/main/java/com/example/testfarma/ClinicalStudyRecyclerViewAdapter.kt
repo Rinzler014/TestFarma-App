@@ -58,7 +58,6 @@ class ClinicalStudyRecyclerViewAdapter(
         holder.studyPrice?.text = resources?.getString(R.string.study_price, study.price)
         holder.studyReq?.text = study.requirements.joinToString("\n")
 
-
     }
 
     override fun getItemCount(): Int {

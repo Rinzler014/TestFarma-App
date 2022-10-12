@@ -51,7 +51,8 @@ class MainActivityMenu : AppCompatActivity() {
                 R.id.contacto,
                 R.id.logOut,
                 R.id.clinical_studies,
-                R.id.user_studies
+                R.id.user_studies,
+                R.id.nutritional_receipts
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

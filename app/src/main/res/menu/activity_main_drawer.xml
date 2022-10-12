@@ -50,6 +50,13 @@
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp"/>
 
+        <item
+            android:id="@+id/nutritional_receipts"
+            android:icon="@drawable/ic_receipt"
+            android:title="@string/receipts_catalog_label"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="28sp"/>
+
     </group>
 
     <group
