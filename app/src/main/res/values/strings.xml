@@ -130,5 +130,8 @@
     <string name="receipts_catalog_label">Nuestras Recetas</string>
     <string name="preparation_mode_text">Modo de Preparacion</string>
     <string name="consumption_mode_text">Modo de Consumo</string>
+    <string name="next_metting_label">Proxima Cita</string>
+    <string name="promotions_label">Checa nuestras ultimas promociones</string>
+    <string name="error_doctor_main_menu">Sin informacion disponible</string>
 
 </resources>

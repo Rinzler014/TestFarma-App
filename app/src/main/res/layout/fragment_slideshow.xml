@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="96dp"
-        android:text="@string/user_name"
+        android:text="placeholder"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

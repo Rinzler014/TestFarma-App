@@ -33,14 +33,6 @@ class NutritionalReceiptsAdapter (
     override fun onBindViewHolder(holder: NutritionalReceiptsAdapter.ReceiptCardViewHolder, position: Int) {
         val receipt = receipts[position]
 
-        /*
-        database.child("KxBxqLwCzaUj0so6p7Sho96WTNM2").child("name").get().addOnSuccessListener {
-            holder.studyName?.text = it.value.toString()
-        }.addOnFailureListener {
-            holder.studyName?.text = resources?.getString(R.string.error_database_data)
-        }
-        */
-
         holder.receiptImage?.setImageResource(receipt.imageResourceId)
         holder.receiptName?.text = receipt.name
 
