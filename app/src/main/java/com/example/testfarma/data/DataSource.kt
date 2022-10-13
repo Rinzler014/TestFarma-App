@@ -67,11 +67,16 @@ object DataSource {
         Receipts(
 
             R.drawable.tf_logo_single,
+
             "Jugo para el Estrés",
+
             18..90,
+
             listOf("10 almendras", "1 Platano", "1 Vaso de Agua de Coco"),
+
             listOf("Incorpora las almendras en la licuadora y procésalas con el banano y el agua de coco.",
                     "Bate todo hasta obtener una bebida homogénea."),
+
             listOf("Ingiere el jugo cuando sientas estrés.", "Tómalo como preventivo 3 veces a la semana.")
 
         ),

@@ -18,7 +18,7 @@ class pdfReader : AppCompatActivity() {
         val buttonGoBack = findViewById<Button>(R.id.goBack);
 
         buttonGoBack.setOnClickListener {
-            startActivity(Intent(this,StudiesPage::class.java))
+            startActivity(Intent(this,UserStudies::class.java))
         }
 
     }

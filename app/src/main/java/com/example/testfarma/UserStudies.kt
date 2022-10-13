@@ -1,10 +1,12 @@
 package com.example.testfarma
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.testfarma.databinding.FragmentUserStudiesBinding
 
 
@@ -32,6 +34,12 @@ class UserStudies : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val button = view.findViewById<Button>(R.id.estudios1);
+
+        button.setOnClickListener {
+            val intent = Intent(context, pdfReader::class.java);
+            startActivity(intent) ;
+        }
 
     }
 
