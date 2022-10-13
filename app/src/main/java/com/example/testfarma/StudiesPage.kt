@@ -12,8 +12,15 @@ class StudiesPage : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.estudios1);
 
+        val menu = findViewById<Button>(R.id.buttonMenupdf);
+
         button.setOnClickListener {
             val intent = Intent(this, pdfReader::class.java);
+            startActivity(intent) ;
+        }
+
+        menu.setOnClickListener {
+            val intent = Intent(this, MainActivityMenu::class.java);
             startActivity(intent) ;
         }
 
