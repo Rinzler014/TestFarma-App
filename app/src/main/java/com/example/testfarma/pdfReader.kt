@@ -13,7 +13,7 @@ class pdfReader : AppCompatActivity() {
 
         val pdf = findViewById<PDFView>(R.id.pdfBox);
 
-        pdf.fromAsset("pdfPrueba.pdf").show();
+        pdf.fromAsset("RESULTADOS-186190.pdf").show();
 
         val buttonGoBack = findViewById<Button>(R.id.goBack);
 
