@@ -1,6 +1,7 @@
 package com.example.testfarma.data
 
 import com.example.testfarma.R
+import com.example.testfarma.model.Promotion
 import com.example.testfarma.model.Receipts
 import com.example.testfarma.model.Study
 import com.example.testfarma.model.UserStudy
@@ -102,5 +103,16 @@ object DataSource {
         )
 
     )
+
+    val promotions : List<Promotion> = listOf(
+
+        Promotion(R.drawable.promotion1),
+        Promotion(R.drawable.promotion1),
+        Promotion(R.drawable.promotion1),
+        Promotion(R.drawable.promotion1)
+
+    )
+
+
 
 }
