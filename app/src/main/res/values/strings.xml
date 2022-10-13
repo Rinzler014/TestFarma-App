@@ -138,5 +138,6 @@
     <string name="updated_user_data_title">Mi Perfil</string>
     <string name="updated_user_data_message">¡La informacion de tu perfil ha sido actualizada con exito!</string>
     <string name="ok_label">Ententido</string>
+    <string name="more_info_label">Más Información</string>
 
 </resources>

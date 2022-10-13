@@ -1,24 +1,19 @@
-package com.example.testfarma.ui.gallery
+package com.example.testfarma
 
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.testfarma.R
 import com.example.testfarma.databinding.FragmentGalleryBinding
-import com.google.firebase.auth.FirebaseAuth
-import java.net.URI
-import java.net.URL
 
 
-class GalleryFragment : Fragment() {
+class OurCompanyFragment : Fragment() {
 
 
     private var _binding: FragmentGalleryBinding? = null

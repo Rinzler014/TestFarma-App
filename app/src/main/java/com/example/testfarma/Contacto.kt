@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.testfarma.databinding.FragmentContactoBinding
-import com.example.testfarma.databinding.FragmentHomeBinding
 
 
-class contacto : Fragment() {
+class Contacto : Fragment() {
 
     private var _binding : FragmentContactoBinding? = null
     private val binding get() = _binding!!

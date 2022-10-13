@@ -1,4 +1,4 @@
-package com.example.testfarma.ui.home
+package com.example.testfarma
 
 import android.content.res.Resources
 import android.os.Bundle
@@ -6,21 +6,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.example.testfarma.PromotionsSliderAdapter
-import com.example.testfarma.R
 import com.example.testfarma.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 import java.lang.Math.abs
 
 class HomeFragment : Fragment() {

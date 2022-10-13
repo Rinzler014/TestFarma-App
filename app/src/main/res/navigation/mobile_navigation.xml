@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_first_form">
         <action
             android:id="@+id/action_firstFormFragment2_to_secondFormFragment2"
-            app:destination="@id/secondFormFragment2" />
+            app:destination="@id/secondFormFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/secondFormFragment2"
@@ -21,7 +23,9 @@
         tools:layout="@layout/fragment_second_form">
         <action
             android:id="@+id/action_secondFormFragment2_to_accountSuccessCreation2"
-            app:destination="@id/accountSuccessCreation2" />
+            app:destination="@id/accountSuccessCreation2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <argument
             android:name="userPersonalInformation"
             app:argType="string[]" />
@@ -33,7 +37,9 @@
         tools:layout="@layout/fragment_account_success_creation">
         <action
             android:id="@+id/action_accountSuccessCreation2_to_login"
-            app:destination="@id/login" />
+            app:destination="@id/login"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <navigation android:id="@+id/navigation2"
         app:startDestination="@id/nav_home">
@@ -44,14 +50,14 @@
             tools:layout="@layout/fragment_user_configuration_data" />
         <fragment
             android:id="@+id/nav_home"
-            android:name="com.example.testfarma.ui.home.HomeFragment"
+            android:name="com.example.testfarma.HomeFragment"
             android:label="@string/menu_inicio"
             tools:layout="@layout/fragment_home" >
 
         </fragment>
         <fragment
             android:id="@+id/nav_gallery"
-            android:name="com.example.testfarma.ui.gallery.GalleryFragment"
+            android:name="com.example.testfarma.OurCompanyFragment"
             android:label="@string/menu_nosotros"
             tools:layout="@layout/fragment_gallery" />
         <argument
@@ -59,7 +65,7 @@
             app:argType="string" />
         <fragment
             android:id="@+id/contacto"
-            android:name="com.example.testfarma.contacto"
+            android:name="com.example.testfarma.Contacto"
             android:label="@string/contact_label"
             tools:layout="@layout/fragment_contacto" />
         <fragment
@@ -95,13 +101,18 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_login_to_navigation2"
-            app:destination="@id/navigation2" />
+            app:destination="@id/navigation2"
+            app:enterAnim="@android:anim/fade_in" />
         <action
             android:id="@+id/action_login_to_firstFormFragment2"
-            app:destination="@id/firstFormFragment2" />
+            app:destination="@id/firstFormFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim" />
         <action
             android:id="@+id/action_login_to_resetPassword"
-            app:destination="@id/resetPassword" />
+            app:destination="@id/resetPassword"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/resetPassword"
