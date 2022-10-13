@@ -133,5 +133,10 @@
     <string name="next_metting_label">Proxima Cita</string>
     <string name="promotions_label">Checa nuestras ultimas promociones</string>
     <string name="error_doctor_main_menu">Sin informacion disponible</string>
+    <string name="update_label">Actualizar</string>
+    <string name="error_label_text">ERROR</string>
+    <string name="updated_user_data_title">Mi Perfil</string>
+    <string name="updated_user_data_message">¡La informacion de tu perfil ha sido actualizada con exito!</string>
+    <string name="ok_label">Ententido</string>
 
 </resources>

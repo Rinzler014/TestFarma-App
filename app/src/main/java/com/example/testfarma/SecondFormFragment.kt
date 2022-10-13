@@ -274,6 +274,7 @@ class SecondFormFragment : Fragment() {
                                                                                             userName.text.toString(), email.text.toString())
                         )
 
+                        auth.currentUser?.sendEmailVerification()
                         val action = SecondFormFragmentDirections.actionSecondFormFragment2ToAccountSuccessCreation2()
                         view.findNavController().navigate(action)
                     } else {
