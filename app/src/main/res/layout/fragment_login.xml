@@ -28,11 +28,11 @@
         android:layout_marginBottom="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/field_login_email" />
+        app:layout_constraintBottom_toTopOf="@id/field_username_input" />
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/field_login_email"
+        android:id="@+id/field_username_input"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -43,10 +43,10 @@
         app:layout_constraintTop_toBottomOf="@id/tf_logo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/field_login_email_edit"
+            android:id="@+id/field_username_input_edit"
             android:layout_width="280dp"
             android:fontFamily="@font/montserrat_regular"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,14 +60,14 @@
         android:hint="@string/password_label"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/yellow_dark"
-        app:layout_constraintStart_toStartOf="@id/field_login_email"
-        app:layout_constraintTop_toBottomOf="@id/field_login_email">
+        app:layout_constraintStart_toStartOf="@id/field_username_input"
+        app:layout_constraintTop_toBottomOf="@id/field_username_input">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_login_password_edit"
             android:layout_width="280dp"
             android:fontFamily="@font/montserrat_regular"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>

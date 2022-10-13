@@ -46,8 +46,7 @@ class MainActivityMenu : AppCompatActivity() {
             setOf(
                 R.id.nav_home,
                 R.id.nav_gallery,
-                R.id.nav_slideshow,
-                R.id.configuracion_perfil,
+                R.id.user_configuration_data,
                 R.id.contacto,
                 R.id.logOut,
                 R.id.clinical_studies,

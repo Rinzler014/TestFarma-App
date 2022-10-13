@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".UserConfigurationData"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/config_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="30dp"
+        android:text="UserName"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/field_username_input"/>
+
+    <TextView
+        android:id="@+id/nombre_usuario_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/username_label"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/field_username_input"
+        app:layout_constraintTop_toTopOf="@id/field_username_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/field_username_input"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_username_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/nombre_usuario_text"
+        app:layout_constraintTop_toBottomOf="@id/config_user"
+        app:layout_constraintBottom_toBottomOf="@id/nombre_usuario_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_username_input_edit"
+            android:layout_width="150dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_personal_name_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/user_personal_name_text"
+        app:layout_constraintStart_toStartOf="@id/field_username_input"
+        app:layout_constraintTop_toBottomOf="@id/field_username_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_personal_name_input_edit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/user_personal_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/field_name_label"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/field_personal_name_input"
+        app:layout_constraintTop_toTopOf="@id/field_personal_name_input"
+        app:layout_constraintBottom_toBottomOf="@id/field_personal_name_input"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_personal_lastname_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/field_personal_name_input"
+        app:layout_constraintTop_toBottomOf="@id/field_personal_name_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_personal_lastname_input_edit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/user_personal_lastname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/field_last_name_label"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/field_personal_lastname_input"
+        app:layout_constraintTop_toTopOf="@id/field_personal_lastname_input"
+        app:layout_constraintBottom_toBottomOf="@id/field_personal_lastname_input"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_personal_momlastname_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/field_personal_lastname_input"
+        app:layout_constraintTop_toBottomOf="@id/field_personal_lastname_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_personal_momlastname_input_edit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/user_personal_momlastname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/field_mother_last_name_label"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/field_personal_momlastname_input"
+        app:layout_constraintTop_toTopOf="@id/field_personal_momlastname_input"
+        app:layout_constraintBottom_toBottomOf="@id/field_personal_momlastname_input"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_mail_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/user_mail_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_mail_input_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/user_mail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Correo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/field_personal_momlastname_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/special_form_button"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:text="Formulario general"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#D6D2D2"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/update_label"
+        app:layout_constraintBottom_toTopOf="@+id/special_form_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

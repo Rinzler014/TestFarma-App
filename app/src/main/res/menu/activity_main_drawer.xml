@@ -15,7 +15,7 @@
             android:fontFamily="@font/montserrat_semibold"/>
 
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/user_configuration_data"
             android:icon="@drawable/ic_baseline_person_24"
             android:title="@string/menu_misdatos"
             android:fontFamily="@font/montserrat_semibold"
@@ -25,13 +25,6 @@
             android:id="@+id/user_studies"
             android:title="Mis Estudios"
             android:icon="@drawable/ic_check"
-            android:fontFamily="@font/montserrat_semibold"
-            android:textSize="28sp" />
-
-        <item
-            android:id="@+id/configuracion_perfil"
-            android:icon="@drawable/ic_edit"
-            android:title="@string/menu_config"
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="28sp" />
 

@@ -55,7 +55,7 @@ class Login : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val mail = view.findViewById<EditText>(R.id.field_login_email_edit)
+        val mail = view.findViewById<EditText>(R.id.field_username_input_edit)
         val password = view.findViewById<EditText>(R.id.field_login_password_edit)
 
         val resetPassword = view.findViewById<TextView>(R.id.reset_password_button)
