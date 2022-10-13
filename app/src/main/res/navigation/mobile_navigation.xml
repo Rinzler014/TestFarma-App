@@ -38,10 +38,10 @@
     <navigation android:id="@+id/navigation2"
         app:startDestination="@id/nav_home">
         <fragment
-            android:id="@+id/nav_slideshow"
-            android:name="com.example.testfarma.ui.slideshow.SlideshowFragment"
+            android:id="@+id/user_configuration_data"
+            android:name="com.example.testfarma.UserConfigurationData"
             android:label="@string/menu_misdatos"
-            tools:layout="@layout/fragment_slideshow" />
+            tools:layout="@layout/fragment_user_configuration_data" />
         <fragment
             android:id="@+id/nav_home"
             android:name="com.example.testfarma.ui.home.HomeFragment"
@@ -49,11 +49,6 @@
             tools:layout="@layout/fragment_home" >
 
         </fragment>
-        <fragment
-            android:id="@+id/configuracion_perfil"
-            android:name="com.example.testfarma.configuracion_perfil"
-            android:label="Configuracion de Perfil"
-            tools:layout="@layout/fragment_configuracion_perfil" />
         <fragment
             android:id="@+id/nav_gallery"
             android:name="com.example.testfarma.ui.gallery.GalleryFragment"
@@ -65,12 +60,12 @@
         <fragment
             android:id="@+id/contacto"
             android:name="com.example.testfarma.contacto"
-            android:label="fragment_contacto"
+            android:label="@string/contact_label"
             tools:layout="@layout/fragment_contacto" />
         <fragment
             android:id="@+id/logOut"
             android:name="com.example.testfarma.LogOut"
-            android:label="fragment_log_out"
+            android:label="Cierre de Sesion"
             tools:layout="@layout/fragment_log_out" >
             <action
                 android:id="@+id/action_logOut_to_mobile_navigation"
@@ -81,6 +76,16 @@
             android:name="com.example.testfarma.ClinicalStudyFragment"
             android:label="Estudios"
             tools:layout="@layout/fragment_clinical_study_list" />
+        <fragment
+            android:id="@+id/user_studies"
+            android:name="com.example.testfarma.UserStudies"
+            android:label="Mis Estudios"
+            tools:layout="@layout/fragment_user_studies" />
+        <fragment
+            android:id="@+id/nutritional_receipts"
+            android:name="com.example.testfarma.NutritionalReceipts"
+            android:label="Recetas Nutricionales"
+            tools:layout="@layout/fragment_nutritional_receipts" />
 
     </navigation>
     <fragment

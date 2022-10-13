@@ -7,152 +7,67 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <ImageView
-        android:id="@+id/datos_head"
-        android:layout_width="326dp"
-        android:layout_height="80dp"
-        android:src="@drawable/tf_vectoryzed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/datos_imageView"
-        android:layout_width="417dp"
+        android:layout_width="411dp"
         android:layout_height="80dp"
-        android:layout_marginTop="88dp"
         android:src="@drawable/side_nav_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="74dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/datos_imageView"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@drawable/screenshot_2022_09_04_at_19_26_13_figma"
+        tools:src="@drawable/screenshot_2022_09_04_at_19_26_13_figma"
+        tools:visibility="visible" />
+
 
     <TextView
         android:id="@+id/datos_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="104dp"
-        android:text="Nombre del usuario"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="96dp"
+        android:text="placeholder"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/texted"
+        android:id="@+id/fecha_na"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="192dp"
-        android:text="Edad: "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/textse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="168dp"
-        android:text="Sexo:"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textpeso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="240dp"
-        android:text="Peso: "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textalt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="160dp"
-        android:text="Altura:"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_ed"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="178dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="20 años"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/texted"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_se"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="176dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Femenino"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textse"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/te_pe"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="60 kg"
-        android:textSize="12sp"
+        android:layout_marginTop="124dp"
+        android:text="Fecha de nacimiento: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/te_al"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="224dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="1.63 m"
-        android:textSize="12sp"
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Genero:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/fecha_na" />
 
     <ImageView
         android:id="@+id/separador"
@@ -221,6 +136,42 @@
         app:backgroundTint="#FF9800"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/datos_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="@+id/datos_imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toEndOf="@+id/fecha_na"
+        app:layout_constraintTop_toBottomOf="@+id/datos_imageView" />
+
+    <TextView
+        android:id="@+id/genero_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="Genero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/genero"
+        app:layout_constraintTop_toBottomOf="@+id/date_out" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

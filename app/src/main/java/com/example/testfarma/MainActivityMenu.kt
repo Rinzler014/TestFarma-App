@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.view.View
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -43,7 +44,14 @@ class MainActivityMenu : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.configuracion_perfil, R.id.contacto, R.id.logOut, R.id.clinical_studies
+                R.id.nav_home,
+                R.id.nav_gallery,
+                R.id.user_configuration_data,
+                R.id.contacto,
+                R.id.logOut,
+                R.id.clinical_studies,
+                R.id.user_studies,
+                R.id.nutritional_receipts
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -55,6 +63,14 @@ class MainActivityMenu : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun showHide(view: View) {
+        view.visibility = if (view.visibility == View.VISIBLE){
+            View.INVISIBLE
+        } else{
+            View.VISIBLE
+        }
     }
 
 }
