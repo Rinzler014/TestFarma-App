@@ -52,6 +52,9 @@ class HomeFragment : Fragment() {
 
         val userUID = FirebaseAuth.getInstance().currentUser?.uid.toString()
 
+        val nextMeetingDate = view.findViewById<TextView>(R.id.next_meeting_date)
+        val nextMeetingDoctor = view.findViewById<TextView>(R.id.doctor_name_text)
+
         val helloMessage = view.findViewById<TextView>(R.id.hello_message)
 
         database.child(userUID).child("name").get().addOnSuccessListener {
@@ -59,6 +62,20 @@ class HomeFragment : Fragment() {
         }.addOnFailureListener{
             Log.e("MAIN", "Error getting data", it)
             helloMessage.text = getString(R.string.hello_message_label, "Usuario")
+        }
+
+        database.child(userUID).child("upcoming_meeting").get().addOnSuccessListener {
+            nextMeetingDate.text = it.value.toString()
+        }.addOnFailureListener{
+            Log.e("MAIN", "Error getting data", it)
+            nextMeetingDate.text = "00/00/0000"
+        }
+
+        database.child(userUID).child("upcoming_meeting_doctor").get().addOnSuccessListener {
+            nextMeetingDoctor.text = it.value.toString()
+        }.addOnFailureListener{
+            Log.e("MAIN", "Error getting data", it)
+            nextMeetingDoctor.text = getString(R.string.error_doctor_main_menu)
         }
 
         val viewerPager = view.findViewById<ViewPager2>(R.id.promotions)
