@@ -6,45 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".StudiesPage">
 
-    <TableLayout
-        android:id="@+id/tablePDFstudios"
-        android:layout_width="327dp"
-        android:layout_height="432dp"
-        android:background="#E3E3E3"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-
     <TextView
         android:id="@+id/studiesText"
         android:layout_width="222dp"
         android:layout_height="44dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Estudios"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/tablePDFstudios"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,6 +31,97 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tablePDFstudios"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <Button
+        android:id="@+id/estudios1"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:background="#8E8E8E"
+        android:backgroundTint="#D5D5D5"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Estudios_Example.pdf"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        app:rippleColor="#DDDDDD" />
+
+    <Button
+        android:id="@+id/estudios2"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:background="#8E8E8E"
+        android:backgroundTint="#D5D5D5"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Estudios_Example.pdf"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311"
+        app:rippleColor="#DDDDDD" />
+
+    <Button
+        android:id="@+id/estudios3"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:background="#8E8E8E"
+        android:backgroundTint="#D5D5D5"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Estudios_Example.pdf"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447"
+        app:rippleColor="#DDDDDD" />
+
+    <Button
+        android:id="@+id/estudios4"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:background="#8E8E8E"
+        android:backgroundTint="#D5D5D5"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Estudios_Example.pdf"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
+        app:rippleColor="#DDDDDD" />
+
+    <Button
+        android:id="@+id/estudios5"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:background="#8E8E8E"
+        android:backgroundTint="#D5D5D5"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Estudios_Example.pdf"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        app:rippleColor="#DDDDDD" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
